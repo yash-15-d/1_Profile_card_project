@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background:
+  linear-gradient(to bottom, transparent, transparent),
+  url('./images/bg-pattern-bottom.svg'),
+  url('./images/bg-pattern-top.svg');
+  /* background-position: center; */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: hsl(185, 75%, 39%);
+
+}
+
+.attribution{
+    width: 375px;
+    /* border: 2px solid black; */
+    min-height: 450px;
+    border-radius:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    background: url('./images/bg-pattern-card.svg');
+    /* margin: 1rem; */
+}
+.details{
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 375px;
+    height: 250px;
+    position: relative;
+    margin-top: 200px;
+}
+.image{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    position: absolute;
+    top: -62px;
+    left: 140px;
+    border: 10px solid white;
+}
+.head1{
+    display: flex;
+    flex-direction: row;
+    width: 375px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.head1 p{
+    font-size: 28px;
+    margin-top: 2px;
+    padding: 6px;
+}
+.line{
+    width: 375px;
+    height: 0.9px;
+    background-color: rgb(188, 178, 178);
+    margin-top: 12px;
+}
+.image{
+    height: 100px;
+    width: 100px;
+    /* background-color: white; */
+    border-radius: 50%;
+    /* background: url('./images/image-victor.jpg'); */
+    background-size: contain;
+    margin-top: 20px;
+
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+@media (width<400px) {
+    .attribution{
+        width: 320px;
+    }
+}
